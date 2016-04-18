@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DealershipAuto.Business.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,7 @@ namespace DealershipAuto.Business
 		public ECarTag CarTag { get; set; }
 
 		public double Price { get; protected set; }
-	}
+
+        public Engine Engine { get; set; }
+    }
 }
