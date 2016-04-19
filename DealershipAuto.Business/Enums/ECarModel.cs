@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DealershipAuto.Business.Components
+namespace DealershipAuto.Business.Enums
 {
-	public enum EColor
+	public enum ECarModel
 	{
-
-		Blue, Yellow
+		Mercedes,
+		Toyota,
+		Nissan
 	}
 }

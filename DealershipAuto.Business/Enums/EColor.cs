@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DealershipAuto.Business.Components
+namespace DealershipAuto.Business.Enums
 {
-	public enum EEngine
+	public enum EColor
 	{
 
-
+		Blue, Yellow
 	}
 }

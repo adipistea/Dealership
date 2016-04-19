@@ -7,8 +7,8 @@
     <ProjectGuid>{393E301F-B03D-4639-918B-461C23F1F772}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DealershipAuto.Console</RootNamespace>
-    <AssemblyName>DealershipAuto.Console</AssemblyName>
+    <RootNamespace>DealershipAuto.ConsoleUI</RootNamespace>
+    <AssemblyName>DealershipAuto.ConsoleUI</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client Screens\BuyingNewCustomizedCarScreen.cs" />
+    <Compile Include="Client Screens\BuyingNewStandardCarScreen.cs" />
+    <Compile Include="Client Screens\BuyingSecondHandCarScreen.cs" />
+    <Compile Include="Client Screens\ClientScreen.cs" />
+    <Compile Include="Employee Screens\EmployeeScreen.cs" />
+    <Compile Include="FirstScreen.cs" />
+    <Compile Include="AbstractScreen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Navigation.cs" />
+    <Compile Include="Client Screens\SellingSecondHandCarMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

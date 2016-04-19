@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,29 +44,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car Prototype\ICarPrototype.cs" />
     <Compile Include="Car Selling Profit - Strategy\CarProfitCalculator.cs" />
     <Compile Include="Car Selling Profit - Strategy\IProfitStrategy.cs" />
     <Compile Include="Car Selling Profit - Strategy\NewCarProfit.cs" />
     <Compile Include="Car Selling Profit - Strategy\SecondCarProfit.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="CarTags\BrandNewCar.cs" />
+    <Compile Include="CarTags\CustomizedCar.cs" />
+    <Compile Include="CarTags\SecondHandCar.cs" />
     <Compile Include="CarTester - Facade\CarTester.cs" />
     <Compile Include="CarTester - Facade\EngineTester.cs" />
-    <Compile Include="Components\EColor.cs" />
-    <Compile Include="Components\EEngine.cs" />
-    <Compile Include="Components\Engine.cs" />
+    <Compile Include="Enums\ECarModel.cs" />
+    <Compile Include="Enums\EColor.cs" />
+    <Compile Include="Enums\EEngine.cs" />
+    <Compile Include="Car Components\Engine.cs" />
     <Compile Include="Dealership.cs" />
-    <Compile Include="ECarTag.cs" />
+    <Compile Include="Car Decorator\BasicCarDecorator.cs" />
+    <Compile Include="Car Decorator\CarDecorator.cs" />
+    <Compile Include="Car Decorator\FamilyCarDecorator.cs" />
+    <Compile Include="Car Decorator\LuxuryCarDecorator.cs" />
     <Compile Include="Employees - Chain Of Responsability\Employee.cs" />
     <Compile Include="Employees - Chain Of Responsability\BaseEmployee.cs" />
     <Compile Include="Employees - Chain Of Responsability\Manager.cs" />
+    <Compile Include="Enums\ECarTag.cs" />
+    <Compile Include="Enums\ECarType.cs" />
+    <Compile Include="Factory\CarFactory.cs" />
+    <Compile Include="Factory\CarTypes\BrandNew.cs" />
+    <Compile Include="Factory\CarTypes\Customized.cs" />
+    <Compile Include="Factory\CarTypes\SecondHand.cs" />
     <Compile Include="IBankAccount.cs" />
     <Compile Include="ICar.cs" />
     <Compile Include="IDealership.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Components\Enums\" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

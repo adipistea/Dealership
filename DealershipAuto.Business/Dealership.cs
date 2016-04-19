@@ -1,5 +1,9 @@
 ﻿using DealershipAuto.Business.Components;
 using DealershipAuto.Business.Employers___Chain_Of_Responsability;
+using DealershipAuto.Business.Enums;
+using DealershipAuto.DealershipAuto.Business.Decorator;
+using DealershipAuto.DealershipAuto.Business.Factory;
+using DealershipAuto.DealershipAuto.Business.Factory.CarTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +24,8 @@ namespace DealershipAuto.Business
 		{
 			_secondHandCars = new List<ICar>();
 			_standardCars = new List<ICar>();
+			InitStandardCars();
+
 			_employees = new List<BaseEmployee>();
 
 			BaseEmployee manager = new Manager();
@@ -86,6 +92,15 @@ namespace DealershipAuto.Business
 			{
 				return false;
 			}
+		}
+
+		private void InitStandardCars()
+		{
+			CarFactory brandNewFactory = new BrandNew();
+			ICar car1 = brandNewFactory.GetCar();
+			car1.Model = ECarModel.Nissan;
+			ICar standardCar1 = car1.Clone();
+			_standardCars.Add(standardCar1);
 		}
 	}
 }

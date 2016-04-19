@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DealershipAuto.Business
+namespace DealershipAuto.Business.Car_Prototype
 {
-	public enum ECarTag
+	public interface ICarPrototype
 	{
-		SecondHand,
-		Customized,
-		BrandNew
+
+		ICar Clone();
 	}
 }
