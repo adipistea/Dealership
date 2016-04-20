@@ -50,6 +50,8 @@
     <Compile Include="Client Screens\BuyingNewStandardCarScreen.cs" />
     <Compile Include="Client Screens\BuyingSecondHandCarScreen.cs" />
     <Compile Include="Client Screens\ClientScreen.cs" />
+    <Compile Include="Employee Screens\BankAccountScreen.cs" />
+    <Compile Include="Employee Screens\ConfigureStandardCarsScreen.cs" />
     <Compile Include="Employee Screens\EmployeeScreen.cs" />
     <Compile Include="FirstScreen.cs" />
     <Compile Include="AbstractScreen.cs" />

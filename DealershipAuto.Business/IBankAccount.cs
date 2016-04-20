@@ -9,8 +9,8 @@ namespace DealershipAuto.Business
     public interface IBankAccount
     {
 
-        void Deposit(double money);
-        void Retrieve(double _lastDepositedAmount);
+		bool Deposit(double money);
+		bool Retrieve(double _lastDepositedAmount);
         void Display();
     }
 }

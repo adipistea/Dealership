@@ -2,6 +2,7 @@
 using DealershipAuto.Business.Components;
 using DealershipAuto.Business.Employers___Chain_Of_Responsability;
 using DealershipAuto.Business.Enums;
+using DealershipAuto.Business.Proxy;
 using DealershipAuto.DealershipAuto.Business.Decorator;
 using DealershipAuto.DealershipAuto.Business.Factory;
 using DealershipAuto.DealershipAuto.Business.Factory.CarTypes;
@@ -21,6 +22,9 @@ namespace DealershipAuto.Business
 		List<ICar> _secondHandCars;
 		List<ICar> _standardCars;
 		//TODO standardized cars should be kept in this list also
+
+		public IBankAccount BankAccount { get; private set; }
+
 		public Dealership()
 		{
 			_secondHandCars = new List<ICar>();
@@ -32,6 +36,8 @@ namespace DealershipAuto.Business
 			BaseEmployee manager = new Manager();
 			_employees.Add(new Employee() { Successor = manager });
 			_employees.Add(manager);
+
+			BankAccount = new SafeAccountProxy();
 		}
 
 

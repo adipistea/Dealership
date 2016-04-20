@@ -8,6 +8,8 @@ namespace DealershipAuto.Business
 {
 	public interface IDealership
 	{
+		IBankAccount BankAccount { get; }
+
 		bool SellSecondHandCar(ICar car, double sellingCost);
 
 		

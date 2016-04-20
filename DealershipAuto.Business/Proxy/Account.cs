@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +22,9 @@ namespace DealershipAuto.Business.Proxy
             return true;
         }
 
-        public bool Display()
+        public void Display()
         {
             Console.WriteLine("Sum of money: {0}", _balance);
-            return true;
         }
     }
 }

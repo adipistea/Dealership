@@ -54,14 +54,11 @@ namespace DealershipAuto.ConsoleUI
 			if (result)
 			{
 				Console.ForegroundColor = ConsoleColor.Green;
-
-				_dealership.SellSecondHandCar(secondHandCar, price);
 				Display("Thank you your car has been registered.");
 			}
 			else
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
-
 				Display("Your car is not eligible");
 			}
 

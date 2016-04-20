@@ -1,4 +1,5 @@
 ﻿using DealershipAuto.Business;
+using DealershipAuto.ConsoleUI.Employee_Screens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,8 +24,12 @@ namespace DealershipAuto.ConsoleUI
 			Navigation.Add(new BuyingSecondHandCarScreen(_dealership));
 			Navigation.Add(new SellingSecondHandCarMenu(_dealership));
 
+			
+
 			//employee screens
-			Navigation.Add(new EmployeeScreen());
+			Navigation.Add(new EmployeeScreen(_dealership));
+			Navigation.Add(new BankAccountScreen(_dealership.BankAccount));
+			Navigation.Add(new ConfigureStandardCarsScreen(_dealership));
 
 			Navigation.GoToScreen<FirstScreen>();
 		}
