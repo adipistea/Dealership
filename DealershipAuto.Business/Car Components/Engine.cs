@@ -9,10 +9,7 @@ namespace DealershipAuto.Business.Components
 {
 	public class Engine
 	{
-
-		public bool IsValid(ICar car, EEngine engineType)
-		{
-			return false;
-		}
+        private double overheat;
+        public double Overheat { get; set; } //engine overheating
 	}
 }

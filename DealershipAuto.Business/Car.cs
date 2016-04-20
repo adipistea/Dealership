@@ -22,7 +22,7 @@ namespace DealershipAuto.Business
 		public bool IsClone { get; set; }
 
 
-		public Engine Engine { get; }
+        public Engine Engine { get; set; }
 
 		public Car(int Id)
 		{
