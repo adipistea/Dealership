@@ -54,6 +54,7 @@
     <Compile Include="Car Selling Profit - Strategy\NewCarProfit.cs" />
     <Compile Include="Car Selling Profit - Strategy\SecondCarProfit.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="CarEnhancer.cs" />
     <Compile Include="CarService - Singleton - State\CarInServiceState.cs" />
     <Compile Include="CarService - Singleton - State\CarInTestState.cs" />
     <Compile Include="CarService - Singleton - State\EmptyState.cs" />
@@ -86,9 +87,9 @@
     <Compile Include="Enums\ECarTag.cs" />
     <Compile Include="Enums\ECarType.cs" />
     <Compile Include="Factory\CarFactory.cs" />
-    <Compile Include="Factory\CarTypes\BrandNew.cs" />
-    <Compile Include="Factory\CarTypes\Customized.cs" />
-    <Compile Include="Factory\CarTypes\SecondHand.cs" />
+    <Compile Include="Factory\CarTags\BrandNew.cs" />
+    <Compile Include="Factory\CarTags\Customized.cs" />
+    <Compile Include="Factory\CarTags\SecondHand.cs" />
     <Compile Include="IBankAccount.cs" />
     <Compile Include="ICar.cs" />
     <Compile Include="Car Components\IComponent.cs" />

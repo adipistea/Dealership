@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DealershipAuto.ConsoleUI
 {
-	public class Navigation
+	public static class Navigation
 	{
 
 		static List<AbstractScreen> _screens;

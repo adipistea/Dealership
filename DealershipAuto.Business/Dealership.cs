@@ -27,17 +27,17 @@ namespace DealershipAuto.Business
 
 		public Dealership()
 		{
+			BankAccount = new SafeAccountProxy();
+
 			_secondHandCars = new List<ICar>();
 			_standardCars = new List<ICar>();
 			InitStandardCars();
 
 			_employees = new List<BaseEmployee>();
 
-			BaseEmployee manager = new Manager();
-			_employees.Add(new Employee() { Successor = manager });
+			BaseEmployee manager = new Manager(BankAccount);
+			_employees.Add(new Employee(BankAccount) { Successor = manager });
 			_employees.Add(manager);
-
-			BankAccount = new SafeAccountProxy();
 		}
 
 
@@ -100,11 +100,16 @@ namespace DealershipAuto.Business
 				_secondHandCars.Add(car);				
 			}
 
-			return new TestingResult()
+			var result =  new TestingResult()
 			{
 				Passed = service.GetResultsEligible(),
 				ResultOfInvestigation = service.GetResultMessage(),
 			};
+
+
+			service.EjectCar();
+
+			return result;
 		}
 
 		private void InitStandardCars()

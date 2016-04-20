@@ -47,6 +47,10 @@ namespace DealershipAuto.ConsoleUI
 				Display_LongSummaryOfCarAndBuyingScreen(_secondHandCars[inputConverted - 1], Display_Menu, () =>
 				{
 					_dealership.BuyCar(_secondHandCars[inputConverted - 1]);
+
+					CongratsForBuying_Menu();
+
+					Navigation.GoToScreen<ClientScreen>();
 				});
 			}
 		}

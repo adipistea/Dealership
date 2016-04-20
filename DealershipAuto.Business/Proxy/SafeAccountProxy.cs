@@ -13,20 +13,15 @@ namespace DealershipAuto.Business.Proxy
 
 		public bool Authentificate()
 		{
-			Console.WriteLine("Enter password : "); 
+			Console.WriteLine("Enter password : ");
 			string strPass = Console.ReadLine();
 			return strPass.Equals(pass);
 		}
 
 		public bool Deposit(double amount)
 		{
-			if (Authentificate())
-			{
-				_wrappedAccount = new Account();
-				return _wrappedAccount.Deposit(amount);
-			}
-
-			return false;
+			_wrappedAccount = new Account();
+			return _wrappedAccount.Deposit(amount);
 		}
 
 		public bool Retrieve(double amount)

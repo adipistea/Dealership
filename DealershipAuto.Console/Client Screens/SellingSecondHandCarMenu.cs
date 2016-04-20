@@ -44,7 +44,7 @@ namespace DealershipAuto.ConsoleUI
 			}
 
 			//car testing
-			ICar secondHandCar = GetNotEligibleSecondHandCar(price);
+			ICar secondHandCar = GetEligibleSecondHandCar(price);
 			var result = _dealership.SellSecondHandCar(secondHandCar, price);
 
 			ClearDisplay();
@@ -80,10 +80,11 @@ namespace DealershipAuto.ConsoleUI
 		private ICar GetEligibleSecondHandCar(int price)
 		{
 			SecondHand secondHand = new SecondHand();
-			ICar car = secondHand.GetCar();
+			Car car = secondHand.GetCar();
 			car.Model = ECarModel.Mercedes;
 			//car.Price = price;
-			return car;
+			CarEnhancer enhancer = new CarEnhancer();
+			return enhancer.Enhance(car, ECarType.Family);
 		}
 
 		private ICar GetNotEligibleSecondHandCar(int price)
@@ -91,6 +92,7 @@ namespace DealershipAuto.ConsoleUI
 			SecondHand secondHand = new SecondHand();
 			ICar car = secondHand.GetCar();
 			car.Model = ECarModel.Mercedes;
+			
 			car.Base.Damage = 345;
 
 			car.Breaks.BrakeDistance = 567;

@@ -8,13 +8,11 @@ using DealershipAuto.Business.Enums;
 
 namespace DealershipAuto.DealershipAuto.Business.CarTags
 {
-    class CustomizedCar : Car
-    {
-        public CustomizedCar(int id) : base(id) { }
-
-        public ECarTag GetCarTag()
-        {
-            return ECarTag.Customized;
-        }
-    }
+	class CustomizedCar : Car
+	{
+		public CustomizedCar(int id) : base(id)
+		{
+			CarTag = ECarTag.Customized;
+		}
+	}
 }

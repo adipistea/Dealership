@@ -6,6 +6,7 @@ namespace DealershipAuto.Business
 {
 	public interface ICar : ICarPrototype
 	{
+		int Id { get; }
 
 		ECarTag CarTag { get; set; }
 

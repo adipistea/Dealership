@@ -14,6 +14,7 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
 
 		public override void Assemble()
 		{
+			base.Assemble();
 			_decoratedCar.SetAccessory("luxury");
 			_decoratedCar.CarType = ECarType.Luxury;
 		}

@@ -75,10 +75,10 @@ namespace DealershipAuto.ConsoleUI
 		/// <summary>
 		/// Goes back to DisplayFirstScreen after 3 seconds
 		/// </summary>
-		private void CongratsForBuying_Menu()
+		protected void CongratsForBuying_Menu()
 		{
 			Display("Congrats for taking an excellent Deal! You poor thing!");
-			Thread.Sleep(3000);
+			Thread.Sleep(8000);
 			Navigation.GoToScreen<FirstScreen>();
 		}
 	}

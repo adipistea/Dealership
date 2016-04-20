@@ -11,9 +11,10 @@ namespace DealershipAuto.Business
 	public abstract class BaseEmployee
 	{
 
-		public BaseEmployee()
+		public BaseEmployee(IBankAccount bankAccount)
 		{
 			//TODO:: initialize BankAccount
+			BankAccount = bankAccount;
 		}
 
 		protected IBankAccount BankAccount { get; set; }
