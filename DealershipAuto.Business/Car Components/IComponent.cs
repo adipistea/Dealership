@@ -7,7 +7,7 @@ using DealershipAuto.Business.Car_Components;
 
 namespace DealershipAuto.Business.Car_Components
 {
-    public interface IComponents
+    public interface IComponent
     {
 
     }

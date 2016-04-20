@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DealershipAuto.Business.Car_Components
 {
-    public class Breaks : IComponents
+    public class Breaks : IComponent
     {
         private double overheat;
         private bool cableBroke;

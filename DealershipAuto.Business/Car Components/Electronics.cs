@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DealershipAuto.Business.Car_Components
 {
-    public class Electronics : IComponents
+    public class Electronics : IComponent
     {
         private bool turometer;
 

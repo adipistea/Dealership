@@ -44,6 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car Components\Base.cs" />
+    <Compile Include="Car Components\Breaks.cs" />
+    <Compile Include="Car Components\Electronics.cs" />
+    <Compile Include="Car Components\ExhaustingSystem.cs" />
     <Compile Include="Car Prototype\ICarPrototype.cs" />
     <Compile Include="Car Selling Profit - Strategy\CarProfitCalculator.cs" />
     <Compile Include="Car Selling Profit - Strategy\IProfitStrategy.cs" />
@@ -82,6 +86,7 @@
     <Compile Include="Factory\CarTypes\SecondHand.cs" />
     <Compile Include="IBankAccount.cs" />
     <Compile Include="ICar.cs" />
+    <Compile Include="Car Components\IComponent.cs" />
     <Compile Include="IDealership.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proxy\Account.cs" />

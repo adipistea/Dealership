@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DealershipAuto.Business.Car_Components
 {
-    public class ExhaustingSystem
+    public class ExhaustingSystem  :IComponent
     {
         private double gasEliminated;
 
@@ -14,7 +14,6 @@ namespace DealershipAuto.Business.Car_Components
 
         public double GasEliminated { get; set; } //Cantity of gas eliminated
 
-        public bool OutEliminated { get; set; } //If eliminates gas out of the car
-        
+        public bool OutEliminated { get; set; } //If eliminates gas out of the car        
     }
 }

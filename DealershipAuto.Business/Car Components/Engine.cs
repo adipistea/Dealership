@@ -1,4 +1,5 @@
-﻿using DealershipAuto.Business.Enums;
+﻿using DealershipAuto.Business.Car_Components;
+using DealershipAuto.Business.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DealershipAuto.Business.Components
 {
-	public class Engine
+	public class Engine : IComponent
 	{
         private double overheat;
         public double Overheat { get; set; } //engine overheating
