@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DealershipAuto.Business.CarService___Singleton___State
 {
-    class Service : IServiceState
+    public class Service : IServiceState
     {
-        private Service _instance = null;
+        private static Service _instance = null;
         private IServiceState _state;
         private Dictionary<EServiceState, IServiceState> _states;
         public ICar _car { get; set; }
@@ -29,7 +29,7 @@ namespace DealershipAuto.Business.CarService___Singleton___State
             _tester = new CarTester();
         }
 
-        public Service GetInstance()
+        public static Service GetInstance()
         {
             if (_instance == null)
                 _instance = new Service();

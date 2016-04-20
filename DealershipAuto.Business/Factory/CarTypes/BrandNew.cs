@@ -8,11 +8,11 @@ using DealershipAuto.DealershipAuto.Business.CarTags;
 
 namespace DealershipAuto.DealershipAuto.Business.Factory.CarTypes
 {
-    class BrandNew:CarFactory
-    {
-        public override Car GetCar()
-        {
-            return new BrandNewCar(++_iNumberOfCars);//SHOFT + ALT + F10
-        }
-    }
+	public class BrandNew : CarFactory
+	{
+		public override Car GetCar()
+		{
+			return new BrandNewCar(++_iNumberOfCars);//SHOFT + ALT + F10
+		}
+	}
 }

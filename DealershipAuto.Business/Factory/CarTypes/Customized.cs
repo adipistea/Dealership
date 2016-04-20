@@ -8,7 +8,7 @@ using DealershipAuto.DealershipAuto.Business.CarTags;
 
 namespace DealershipAuto.DealershipAuto.Business.Factory.CarTypes
 {
-    class Customized:CarFactory
+	public class Customized:CarFactory
     {
         public override Car GetCar()
         {

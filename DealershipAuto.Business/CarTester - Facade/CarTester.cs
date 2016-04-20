@@ -22,7 +22,7 @@ namespace DealershipAuto.Business.CarTester___Facade
 		{
 			_engineTester.IsEngineGood(car.Engine);
 
-			return false;
+			return true;
 		}
 	}
 }

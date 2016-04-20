@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DealershipAuto.Business.CarService___Singleton___State
 {
-    interface IServiceState
+    public interface IServiceState
     {
 
         void InsertCar(ICar car);

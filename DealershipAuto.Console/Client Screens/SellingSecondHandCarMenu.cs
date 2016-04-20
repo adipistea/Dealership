@@ -1,9 +1,9 @@
 ﻿using DealershipAuto.Business;
+using DealershipAuto.Business.CarService___Singleton___State;
+using DealershipAuto.DealershipAuto.Business.Factory.CarTypes;
+using DealershipAuto.Business.Enums;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace DealershipAuto.ConsoleUI
 {
@@ -21,7 +21,7 @@ namespace DealershipAuto.ConsoleUI
 			Display("In order for the car to be sold through our dealership it needs to pass a service test.");
 			Display("1 - If you want to continue"); // Display_SecondHandCar_TestingMenu
 			Display("2 - Go back"); //DisplayClientScreen
-			
+
 			string input = ReadKeyboardCommand();
 			switch (input)
 			{
@@ -33,7 +33,52 @@ namespace DealershipAuto.ConsoleUI
 
 		private void Display_SecondHandCar_TestingMenu()
 		{
-			//TODO:: here the State design pattern should be used
+			DisplayLines();
+			Display("Please specify a price for your car.");
+
+			
+			string input = ReadKeyboardCommand(); int price;
+			if (!Int32.TryParse(input, out price))
+			{
+				return;
+			}
+
+			//car testing
+			IServiceState service = Service.GetInstance();
+			ICar secondHandCar = GetSecondHandCar(price);
+			service.InsertCar(secondHandCar);
+			service.TestCar();
+
+			ClearDisplay();
+
+			Console.ForegroundColor = ConsoleColor.Red;
+			//test result
+			Display(service.GetResultMessage());
+			DisplayLines();
+			if (service.GetResultsEligible())
+			{
+				_dealership.SellSecondHandCar(secondHandCar, price);
+				Display("Thank you your car has been registered.");
+				Display("Have a good day");
+			}
+
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Display("You will be redirected to client screen in 7 seconds!");
+			for (int i = 7; i >= 1; i--)
+			{
+				Display(i + " seconds left " + "\n");
+				Thread.Sleep(1000);
+			}
+			Navigation.GoToScreen<ClientScreen>();
+		}
+
+		private ICar GetSecondHandCar(int price)
+		{
+			SecondHand secondHand = new SecondHand();
+			ICar car = secondHand.GetCar();
+			car.Model = ECarModel.Mercedes;
+			car.Price = price;
+			return car;
 		}
 	}
 }

@@ -52,6 +52,7 @@ namespace DealershipAuto.Business
 			_employees.FirstOrDefault().HandlePurchase(car);
 		}
 
+		//TODO::add here all the enums that represent customization for the car
 		public HashSet<Type> GetCarCustomOptions()
 		{
 			return new HashSet<Type>()
@@ -84,7 +85,7 @@ namespace DealershipAuto.Business
 			bool eligible = new CarTester___Facade.CarTester().IsEligible(car, sellingCost);
 			if (eligible)
 			{
-				//car.Price = sellingCost;
+				car.Price = sellingCost;
 				_secondHandCars.Add(car);
 				return true;
 			}

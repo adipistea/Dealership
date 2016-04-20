@@ -50,6 +50,13 @@
     <Compile Include="Car Selling Profit - Strategy\NewCarProfit.cs" />
     <Compile Include="Car Selling Profit - Strategy\SecondCarProfit.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="CarService - Singleton - State\CarInServiceState.cs" />
+    <Compile Include="CarService - Singleton - State\CarInTestState.cs" />
+    <Compile Include="CarService - Singleton - State\EmptyState.cs" />
+    <Compile Include="CarService - Singleton - State\EServiceState.cs" />
+    <Compile Include="CarService - Singleton - State\IServiceState.cs" />
+    <Compile Include="CarService - Singleton - State\Service.cs" />
+    <Compile Include="CarService - Singleton - State\TestCompletedState.cs" />
     <Compile Include="CarTags\BrandNewCar.cs" />
     <Compile Include="CarTags\CustomizedCar.cs" />
     <Compile Include="CarTags\SecondHandCar.cs" />
