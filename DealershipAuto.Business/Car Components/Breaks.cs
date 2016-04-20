@@ -8,10 +8,10 @@ namespace DealershipAuto.Business.Car_Components
 {
     public class Breaks : IComponent
     {
-        public double Overheat { get; set; }
+        public double Overheat { get; set; }//when it passes a certain value it fails
 
-        public bool CableBroke { get; set; }
+        public bool CableNotBroke { get; set; }
 
-        public double BrakeDistance { get; set; }
-    }
+        public double BrakeDistance { get; set; }//when it passes a certain value it fails
+	}
 }

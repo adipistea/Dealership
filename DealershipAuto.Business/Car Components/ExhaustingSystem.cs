@@ -8,8 +8,8 @@ namespace DealershipAuto.Business.Car_Components
 {
 	public class ExhaustingSystem : IComponent
 	{
-		public double GasEliminated { get; set; } //Cantity of gas eliminated
+		public int GasEliminatedWhenCarIsRunning { get; set; } //Cantity of gas eliminated > 200
 
-		public bool OutEliminated { get; set; } //If eliminates gas out of the car        
+		public bool OutNotEliminatedWhileCarStopped { get; set; } //If eliminates gas out of the car        
 	}
 }

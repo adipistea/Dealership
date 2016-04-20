@@ -22,7 +22,7 @@ namespace DealershipAuto.Business.CarService___Singleton___State
 
         public void TestCar()
         {
-            _service._testResult = _service._tester.IsEligible(_service._car, 0);
+            _service._testResult = _service._tester.IsEligible(_service._car, 0).Passed;
             if (_service._testResult)
                 _service._testResultMessage = "Car is valid for sale";
             else

@@ -10,9 +10,17 @@ namespace DealershipAuto.Business.CarTester___Facade
 	public class EngineTester
 	{
 
-		public bool IsEngineGood(Engine engine)
+		public TestingResult IsEngineGood(Engine engine)
 		{
-			return false;
+			return engine.Overheat > 100 ?
+				new TestingResult()
+				{
+					Passed = false,
+					ResultOfInvestigation = "Engine overheats over 100 degrees"
+				} : new TestingResult()
+				{
+					Passed = true
+				};
 		}
 	}
 }

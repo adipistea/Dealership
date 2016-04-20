@@ -64,8 +64,13 @@
     <Compile Include="CarTags\BrandNewCar.cs" />
     <Compile Include="CarTags\CustomizedCar.cs" />
     <Compile Include="CarTags\SecondHandCar.cs" />
+    <Compile Include="CarTester - Facade\TestingResult.cs" />
+    <Compile Include="CarTester - Facade\ComponentsTester\BaseTester.cs" />
+    <Compile Include="CarTester - Facade\ComponentsTester\BreaksTester.cs" />
     <Compile Include="CarTester - Facade\CarTester.cs" />
-    <Compile Include="CarTester - Facade\EngineTester.cs" />
+    <Compile Include="CarTester - Facade\ComponentsTester\ElectronicsTester.cs" />
+    <Compile Include="CarTester - Facade\ComponentsTester\EngineTester.cs" />
+    <Compile Include="CarTester - Facade\ComponentsTester\ExhaustingSystemTester.cs" />
     <Compile Include="Enums\ECarModel.cs" />
     <Compile Include="Enums\EColor.cs" />
     <Compile Include="Enums\EEngine.cs" />
