@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DealershipAuto.Business.Car_Selling_Profit___Strategy.CarProfitCalculator">
+    <Position X="3.25" Y="4" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAgAAAAA=</HashCode>
+      <FileName>Car Selling Profit - Strategy\CarProfitCalculator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_car" />
+      <Field Name="_bankAccount" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DealershipAuto.Business.Car_Selling_Profit___Strategy.NewCarProfit" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car Selling Profit - Strategy\NewCarProfit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.Car_Selling_Profit___Strategy.SecondCarProfit" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car Selling Profit - Strategy\SecondCarProfit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DealershipAuto.Business.Car_Selling_Profit___Strategy.IProfitStrategy">
+    <Position X="4" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car Selling Profit - Strategy\IProfitStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DealershipAuto.Business.ICar" Collapsed="true">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAQAAAAAAgAAEAAAIQAEEQAAABAgAAAAAQAA=</HashCode>
+      <FileName>ICar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DealershipAuto.Business.IBankAccount" Collapsed="true">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Proxy\IBankAccount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

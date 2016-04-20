@@ -12,5 +12,5 @@ namespace DealershipAuto.Business
 		bool Deposit(double money);
 		bool Retrieve(double _lastDepositedAmount);
         void Display();
-    }
+	}
 }

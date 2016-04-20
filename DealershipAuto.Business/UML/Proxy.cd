@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DealershipAuto.Business.Proxy.Account" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Proxy\Account.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.665" />
+  </Class>
+  <Class Name="DealershipAuto.Business.Proxy.SafeAccountProxy" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3" Width="2.5" />
+    <AssociationLine Name="_wrappedAccount" Type="DealershipAuto.Business.Proxy.Account">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.082" Y="0.14" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAIAAAAEAAAAAQAAAIAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Proxy\SafeAccountProxy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_wrappedAccount" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DealershipAuto.Business.IBankAccount">
+    <Position X="3.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Proxy\IBankAccount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

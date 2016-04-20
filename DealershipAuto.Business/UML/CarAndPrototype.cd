@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DealershipAuto.Business.Car">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAQAAAAAAgIAEAAAIQAEEQAAABAgAAAAAQBA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CarTag" />
+      <Property Name="CarType" />
+      <Property Name="Model" />
+      <Property Name="Base" />
+      <Property Name="Breaks" />
+      <Property Name="Electronics" />
+      <Property Name="ExhaustingSystem" />
+      <Property Name="Engine" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.Car_Components.Base" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car Components\Base.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.Car_Components.Breaks" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car Components\Breaks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.Car_Components.Electronics" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAEAAACAAAAAAAAAAEAA=</HashCode>
+      <FileName>Car Components\Electronics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.Car_Components.Engine" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car Components\Engine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.Car_Components.ExhaustingSystem" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car Components\ExhaustingSystem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.DealershipAuto.Business.CarTags.BrandNewCar">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CarTags\BrandNewCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DealershipAuto.DealershipAuto.Business.CarTags.CustomizedCar">
+    <Position X="4.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CarTags\CustomizedCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DealershipAuto.DealershipAuto.Business.CarTags.SecondHandCar">
+    <Position X="2.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CarTags\SecondHandCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DealershipAuto.Business.ICar">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAQAAAAAAgAAEAAAIQAEEQAAABAgAAAAAQAA=</HashCode>
+      <FileName>ICar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DealershipAuto.Business.Car_Components.IComponent" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Car Components\IComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DealershipAuto.Business.Car_Prototype.ICarPrototype">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Car Prototype\ICarPrototype.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DealershipAuto.Business.Enums.ECarType">
+    <Position X="7.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAACABAA=</HashCode>
+      <FileName>Enums\ECarType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DealershipAuto.Business.Enums.ECarTag">
+    <Position X="7.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\ECarTag.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DealershipAuto.Business.Enums.ECarModel">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAAAI=</HashCode>
+      <FileName>Enums\ECarModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

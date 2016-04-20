@@ -54,7 +54,7 @@
     <Compile Include="Car Selling Profit - Strategy\NewCarProfit.cs" />
     <Compile Include="Car Selling Profit - Strategy\SecondCarProfit.cs" />
     <Compile Include="Car.cs" />
-    <Compile Include="CarEnhancer.cs" />
+    <Compile Include="Car Decorator\CarEnhancer.cs" />
     <Compile Include="CarService - Singleton - State\CarInServiceState.cs" />
     <Compile Include="CarService - Singleton - State\CarInTestState.cs" />
     <Compile Include="CarService - Singleton - State\EmptyState.cs" />
@@ -90,7 +90,7 @@
     <Compile Include="Factory\CarTags\BrandNew.cs" />
     <Compile Include="Factory\CarTags\Customized.cs" />
     <Compile Include="Factory\CarTags\SecondHand.cs" />
-    <Compile Include="IBankAccount.cs" />
+    <Compile Include="Proxy\IBankAccount.cs" />
     <Compile Include="ICar.cs" />
     <Compile Include="Car Components\IComponent.cs" />
     <Compile Include="IDealership.cs" />
@@ -99,7 +99,16 @@
     <Compile Include="Proxy\SafeAccountProxy.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="UML\CarAndPrototype.cd" />
+    <None Include="UML\Cor.cd" />
+    <None Include="UML\Dealership.cd" />
+    <None Include="UML\Decorators.cd" />
+    <None Include="UML\Facade.cd" />
+    <None Include="UML\Factory.cd" />
+    <None Include="UML\Proxy.cd" />
     <None Include="packages.config" />
+    <None Include="UML\StateAndSingleton.cd" />
+    <None Include="UML\Strategy.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

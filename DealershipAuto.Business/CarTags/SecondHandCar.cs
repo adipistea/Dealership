@@ -8,7 +8,7 @@ using DealershipAuto.Business.Enums;
 
 namespace DealershipAuto.DealershipAuto.Business.CarTags
 {
-	class SecondHandCar : Car
+	public class SecondHandCar : Car
 	{
 		public SecondHandCar(int id) : base(id)
 		{

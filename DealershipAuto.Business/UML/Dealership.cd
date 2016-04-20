@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DealershipAuto.Business.Dealership">
+    <Position X="1" Y="4" Width="4.25" />
+    <AssociationLine Name="_secondHandCars" Type="DealershipAuto.Business.ICar" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="5.25" Y="4.375" />
+        <Point X="5.625" Y="4.375" />
+        <Point X="5.625" Y="4.375" />
+        <Point X="7.75" Y="4.375" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.37" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_standardCars" Type="DealershipAuto.Business.ICar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="4.983" />
+        <Point X="9.625" Y="4.983" />
+        <Point X="9.625" Y="4.062" />
+        <Point X="9.25" Y="4.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.567" Y="-1.242" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAQBIACAAAAAAIAAAACAAAAAAAAAAAggEA=</HashCode>
+      <FileName>Dealership.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BankAccount" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_employees" />
+      <Field Name="_secondHandCars" />
+      <Field Name="_standardCars" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.BaseEmployee" Collapsed="true">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAABgAA=</HashCode>
+      <FileName>Employees - Chain Of Responsability\BaseEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DealershipAuto.Business.IDealership">
+    <Position X="6.5" Y="1" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQBIACAAAAAAAAAAAAAAAAAAAAAAAAgEA=</HashCode>
+      <FileName>IDealership.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BankAccount" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="DealershipAuto.Business.IBankAccount" Collapsed="true">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Proxy\IBankAccount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DealershipAuto.Business.ICar" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAQAAAAAAgAAEAAAIQAEEQAAABAgAAAAAQAA=</HashCode>
+      <FileName>ICar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

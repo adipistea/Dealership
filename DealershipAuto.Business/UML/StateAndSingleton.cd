@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DealershipAuto.Business.CarService___Singleton___State.CarInServiceState" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAAAAAAQAAAAAAIAAAAAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>CarService - Singleton - State\CarInServiceState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_service" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.CarService___Singleton___State.CarInTestState" BaseTypeListCollapsed="true">
+    <Position X="5" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAAAAAAQAAAAAAIAAAAAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>CarService - Singleton - State\CarInTestState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_service" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.CarService___Singleton___State.EmptyState" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAAAAAAQAAAAAAIAAAAAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>CarService - Singleton - State\EmptyState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_service" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.CarService___Singleton___State.Service" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AEAERAEAAAAAAAAAAABACAJAFAQAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>CarService - Singleton - State\Service.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="_car" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DealershipAuto.Business.CarService___Singleton___State.TestCompletedState" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="5.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAAAAAAQAAAAAAIAAAAAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>CarService - Singleton - State\TestCompletedState.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_service" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DealershipAuto.Business.CarService___Singleton___State.IServiceState">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAAAAAAAAAAAAAIAAAAAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>CarService - Singleton - State\IServiceState.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DealershipAuto.Business.ICar" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAQAAAAAAgAAEAAAIQAEEQAAABAgAAAAAQAA=</HashCode>
+      <FileName>ICar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DealershipAuto.Business.CarService___Singleton___State.EServiceState">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>CarService - Singleton - State\EServiceState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
