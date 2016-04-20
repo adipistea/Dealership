@@ -6,12 +6,12 @@ using DealershipAuto.Business.Enums;
 using DealershipAuto.Business.Components;
 using DealershipAuto.Business.Car_Prototype;
 using Newtonsoft.Json;
+using DealershipAuto.Business.Car_Components;
 
 namespace DealershipAuto.Business
 {
 	public class Car : ICar, ICarPrototype
 	{
-		public List<string> Accessories { get; set; }
 		public int Id { get; private set; }
 		public ECarTag CarTag { get; set; }
 		public ECarType CarType { get; set; }
@@ -22,7 +22,14 @@ namespace DealershipAuto.Business
 		public bool IsClone { get; set; }
 
 
-        public Engine Engine { get; set; }
+		public Base Base { get; set; }
+		public Breaks Breaks { get; set; }
+		public Electronics Electronics { get; set; }
+		public ExhaustingSystem ExhaustingSystem { get; set; }
+		public Engine Engine { get; set; }
+
+
+		public List<string> Accessories { get; set; }
 
 		public Car(int Id)
 		{
