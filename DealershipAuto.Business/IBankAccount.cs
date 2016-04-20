@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DealershipAuto.Business
 {
-	public interface IBankAccount
-	{
+    public interface IBankAccount
+    {
 
-		void Deposit(double money);
-		void Retrieve(double _lastDepositedAmount);
-	}
+        void Deposit(double money);
+        void Retrieve(double _lastDepositedAmount);
+        void Display();
+    }
 }
