@@ -1,12 +1,6 @@
-﻿using DealershipAuto.Business.Car_Components;
-using DealershipAuto.Business.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace DealershipAuto.Business.Components
+namespace DealershipAuto.Business.Car_Components
 {
 	public class Engine : IComponent
 	{

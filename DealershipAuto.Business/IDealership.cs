@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DealershipAuto.Business.CarTester___Facade;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace DealershipAuto.Business
 	{
 		IBankAccount BankAccount { get; }
 
-		bool SellSecondHandCar(ICar car, double sellingCost);
+		TestingResult SellSecondHandCar(ICar car, double sellingCost);
 
 		
 		void BuyCar(ICar car);

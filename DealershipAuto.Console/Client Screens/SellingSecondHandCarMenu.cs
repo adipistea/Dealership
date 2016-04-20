@@ -44,14 +44,14 @@ namespace DealershipAuto.ConsoleUI
 			}
 
 			//car testing
-			ICar secondHandCar = GetSecondHandCar(price);
-			bool result = _dealership.SellSecondHandCar(secondHandCar, price);
+			ICar secondHandCar = GetNotEligibleSecondHandCar(price);
+			var result = _dealership.SellSecondHandCar(secondHandCar, price);
 
 			ClearDisplay();
 
 			
 			//test result
-			if (result)
+			if (result.Passed)
 			{
 				Console.ForegroundColor = ConsoleColor.Green;
 				Display("Thank you your car has been registered.");
@@ -60,13 +60,16 @@ namespace DealershipAuto.ConsoleUI
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
 				Display("Your car is not eligible");
+
+				DisplayLines();
+				Display(result.ResultOfInvestigation);
 			}
 
 			Display("Have a good day");
 
 			Console.ForegroundColor = ConsoleColor.Cyan;
-			Display("You will be redirected to client screen in 7 seconds!");
-			for (int i = 7; i >= 1; i--)
+			Display("You will be redirected to client screen in 10 seconds!");
+			for (int i = 10; i >= 1; i--)
 			{
 				Display(i + " seconds left " + "\n");
 				Thread.Sleep(1000);
@@ -74,12 +77,29 @@ namespace DealershipAuto.ConsoleUI
 			Navigation.GoToScreen<ClientScreen>();
 		}
 
-		private ICar GetSecondHandCar(int price)
+		private ICar GetEligibleSecondHandCar(int price)
 		{
 			SecondHand secondHand = new SecondHand();
 			ICar car = secondHand.GetCar();
 			car.Model = ECarModel.Mercedes;
 			//car.Price = price;
+			return car;
+		}
+
+		private ICar GetNotEligibleSecondHandCar(int price)
+		{
+			SecondHand secondHand = new SecondHand();
+			ICar car = secondHand.GetCar();
+			car.Model = ECarModel.Mercedes;
+			car.Base.Damage = 345;
+
+			car.Breaks.BrakeDistance = 567;
+			car.Breaks.CableNotBroke = false;
+
+			car.Electronics.GasLevel = false;
+			car.Electronics.Turometer = false;
+
+			car.Engine.Overheat = 63463;
 			return car;
 		}
 	}

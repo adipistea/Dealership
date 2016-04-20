@@ -1,6 +1,5 @@
 ﻿using DealershipAuto.Business.Car_Components;
 using DealershipAuto.Business.Car_Prototype;
-using DealershipAuto.Business.Components;
 using DealershipAuto.Business.Enums;
 
 namespace DealershipAuto.Business

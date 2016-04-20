@@ -1,5 +1,5 @@
 ﻿using DealershipAuto.Business.CarService___Singleton___State;
-using DealershipAuto.Business.Components;
+using DealershipAuto.Business.CarTester___Facade;
 using DealershipAuto.Business.Employers___Chain_Of_Responsability;
 using DealershipAuto.Business.Enums;
 using DealershipAuto.Business.Proxy;
@@ -87,23 +87,24 @@ namespace DealershipAuto.Business
 		///			  false -  car was rejected by CarTester testing
 		/// </returns>
 		/// 
-		public bool SellSecondHandCar(ICar car, double sellingCost)
+		public TestingResult SellSecondHandCar(ICar car, double sellingCost)
 		{
 			IServiceState service = Service.GetInstance();
 			service.InsertCar(car);
 			service.TestCar();
 
-			bool eligible = service.GetResultsEligible();
-			if (eligible)
+			bool isEligible = service.GetResultsEligible();
+			if (isEligible)
 			{
 				car.Price = sellingCost;
-				_secondHandCars.Add(car);
-				return true;
+				_secondHandCars.Add(car);				
 			}
-			else
+
+			return new TestingResult()
 			{
-				return false;
-			}
+				Passed = service.GetResultsEligible(),
+				ResultOfInvestigation = service.GetResultMessage(),
+			};
 		}
 
 		private void InitStandardCars()

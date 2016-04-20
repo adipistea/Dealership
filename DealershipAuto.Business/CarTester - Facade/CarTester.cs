@@ -1,5 +1,4 @@
-﻿using DealershipAuto.Business.Components;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -58,14 +57,14 @@ namespace DealershipAuto.Business.CarTester___Facade
 			if (!exhaustingTest.Passed)
 			{
 				failesTests++;
-				sb.Append(exhaustingTest.Passed + "\n");
+				sb.Append(exhaustingTest.ResultOfInvestigation + " \n");
 			}
 
 			var baseTest = _baseTester.IsBaseNotDamaged(car.Base);
 			if (!baseTest.Passed)
 			{
 				failesTests++;
-				sb.Append(baseTest.Passed + "\n");
+				sb.Append(baseTest.ResultOfInvestigation + " \n");
 			}
 
 			if (failesTests >= 3)

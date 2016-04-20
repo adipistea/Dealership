@@ -17,22 +17,22 @@ namespace DealershipAuto.Business.CarTester___Facade
 			if (!electronics.GasLevel)
 			{
 				testsFailed++;
-				sb.Append("Electronics does not display gase level");
+				sb.Append("Electronics does not display gase level" + "\n");
 			}
 			if(!electronics.Radio)
 			{
 				testsFailed++;
-				sb.Append("Electronics does not have a radio");
+				sb.Append("Electronics does not have a radio" + "\n");
 			}
 			if (!electronics.Turometer)
 			{
 				testsFailed++;
-				sb.Append("Electronics does not have Turometer");
+				sb.Append("Electronics does not have Turometer" + "\n");
 			}
 			if (!electronics.Vitezometer)
 			{
 				testsFailed++;
-				sb.Append("Electronics does not have Vitezometer");
+				sb.Append("Electronics does not have Vitezometer" + "\n");
 			}
 
 			if( testsFailed >= 2)

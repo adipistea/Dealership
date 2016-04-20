@@ -21,17 +21,17 @@ namespace DealershipAuto.Business.CarTester___Facade
 			if (!breaks.CableNotBroke)
 			{
 				testsFailed++;
-				sb.Append("Breaks have the cable broken");
+				sb.Append("Breaks have the cable broken" + "\n");
 			}
 			if (breaks.Overheat > 100)
 			{
 				testsFailed++;
-				sb.Append("Breaks are overheating");
+				sb.Append("Breaks are overheating" + "\n");
 			}
 			if (breaks.BrakeDistance > 20)
 			{
 				testsFailed++;
-				sb.Append("Breaks have the break distance too big > 20");
+				sb.Append("Breaks have the break distance too big > 20" + "\n");
 			}
 
 			if( testsFailed >= 2)
