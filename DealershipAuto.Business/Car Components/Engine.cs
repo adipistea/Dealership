@@ -10,7 +10,6 @@ namespace DealershipAuto.Business.Components
 {
 	public class Engine : IComponent
 	{
-        private double overheat;
         public double Overheat { get; set; } //engine overheating
 	}
 }

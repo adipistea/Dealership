@@ -8,14 +8,6 @@ namespace DealershipAuto.Business.Car_Components
 {
     public class Electronics : IComponent
     {
-        private bool turometer;
-
-        private bool radio;
-
-        public bool gasLevel;
-
-        public bool vitezometer;
-
         public bool Turometer { get; set; } //if turometer works
 
         public bool Radio { get; set; }  //if radio works
