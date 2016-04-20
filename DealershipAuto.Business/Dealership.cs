@@ -1,4 +1,5 @@
-﻿using DealershipAuto.Business.Components;
+﻿using DealershipAuto.Business.CarService___Singleton___State;
+using DealershipAuto.Business.Components;
 using DealershipAuto.Business.Employers___Chain_Of_Responsability;
 using DealershipAuto.Business.Enums;
 using DealershipAuto.DealershipAuto.Business.Decorator;
@@ -82,7 +83,11 @@ namespace DealershipAuto.Business
 		/// 
 		public bool SellSecondHandCar(ICar car, double sellingCost)
 		{
-			bool eligible = new CarTester___Facade.CarTester().IsEligible(car, sellingCost);
+			IServiceState service = Service.GetInstance();
+			service.InsertCar(car);
+			service.TestCar();
+
+			bool eligible = service.GetResultsEligible();
 			if (eligible)
 			{
 				car.Price = sellingCost;

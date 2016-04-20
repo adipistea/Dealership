@@ -44,23 +44,28 @@ namespace DealershipAuto.ConsoleUI
 			}
 
 			//car testing
-			IServiceState service = Service.GetInstance();
 			ICar secondHandCar = GetSecondHandCar(price);
-			service.InsertCar(secondHandCar);
-			service.TestCar();
+			bool result = _dealership.SellSecondHandCar(secondHandCar, price);
 
 			ClearDisplay();
 
-			Console.ForegroundColor = ConsoleColor.Red;
+			
 			//test result
-			Display(service.GetResultMessage());
-			DisplayLines();
-			if (service.GetResultsEligible())
+			if (result)
 			{
+				Console.ForegroundColor = ConsoleColor.Green;
+
 				_dealership.SellSecondHandCar(secondHandCar, price);
 				Display("Thank you your car has been registered.");
-				Display("Have a good day");
 			}
+			else
+			{
+				Console.ForegroundColor = ConsoleColor.Red;
+
+				Display("Your car is not eligible");
+			}
+
+			Display("Have a good day");
 
 			Console.ForegroundColor = ConsoleColor.Cyan;
 			Display("You will be redirected to client screen in 7 seconds!");
@@ -77,7 +82,7 @@ namespace DealershipAuto.ConsoleUI
 			SecondHand secondHand = new SecondHand();
 			ICar car = secondHand.GetCar();
 			car.Model = ECarModel.Mercedes;
-			car.Price = price;
+			//car.Price = price;
 			return car;
 		}
 	}
