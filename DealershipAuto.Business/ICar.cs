@@ -31,5 +31,7 @@ namespace DealershipAuto.Business
 		string LongSummary();
 
 		bool IsClone { get; set; }
+
+		void Use();
 	}
 }

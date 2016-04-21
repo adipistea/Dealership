@@ -80,5 +80,30 @@ namespace DealershipAuto.Business
         {
             return CarType;
         }
+
+
+		public void Use()
+		{
+			Base.Damage = 25;
+			Engine.Overheat = 120;
+			ExhaustingSystem.OutNotEliminatedWhileCarStopped = true;
+
+			Random rand = new Random();
+			ExhaustingSystem.GasEliminatedWhenCarIsRunning = rand.Next(15, 30);
+			Electronics.GasLevel = GetRandomBool();
+			Electronics.Radio = GetRandomBool();
+			Electronics.Turometer = GetRandomBool();
+			Electronics.Vitezometer = GetRandomBool();
+
+			Breaks.BrakeDistance = rand.Next(0, 60);
+			Breaks.CableNotBroke = GetRandomBool();
+			Breaks.Overheat = rand.Next(50, 150);			
+		}
+
+		private bool GetRandomBool()
+		{
+			Random rand = new Random();
+			return rand.Next(0, 2) == 0 ? false : true;
+		}
     }
 }
