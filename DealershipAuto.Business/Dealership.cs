@@ -157,7 +157,7 @@ namespace DealershipAuto.Business
 			car1.Use();
 
 			enhancer.Enhance(car1, ECarType.Basic);
-			_standardCars.Add(car1);
+			_secondHandCars.Add(car1);
 
 			Car car2 = new Car(16214558);
 			car2.Model = ECarModel.Mercedes;
@@ -166,7 +166,7 @@ namespace DealershipAuto.Business
 			car2.Use();
 
 			enhancer.Enhance(car2, ECarType.Family);
-			_standardCars.Add(car2);
+			_secondHandCars.Add(car2);
 
 			Car car3 = new Car(323558);
 			car3.Model = ECarModel.Toyota;
