@@ -72,9 +72,14 @@ namespace DealershipAuto.Business
 
 		public ICar Clone()
 		{
-			var json = JsonConvert.SerializeObject(this);
+			var json = JsonConvert.SerializeObject(this, new JsonSerializerSettings(){
+				ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+			});
 
-			var obj = JsonConvert.DeserializeObject<Car>(json);
+			var obj = JsonConvert.DeserializeObject<Car>(json, new JsonSerializerSettings()
+			{
+				ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+			});
 			obj.IsClone = true;
 			return obj;
 		}
