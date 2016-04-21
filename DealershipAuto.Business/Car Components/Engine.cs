@@ -1,6 +1,5 @@
-﻿
+﻿using DealershipAuto.Business.Car_Components.Engine_Adapter;
 
-using DealershipAuto.Business.Car_Components.Engine_Adapter;
 namespace DealershipAuto.Business.Car_Components
 {
 	public class Engine : IComponent
