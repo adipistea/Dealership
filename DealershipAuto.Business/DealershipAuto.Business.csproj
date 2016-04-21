@@ -91,9 +91,8 @@
     <Compile Include="Enums\ECarTag.cs" />
     <Compile Include="Enums\ECarType.cs" />
     <Compile Include="Factory\CarFactory.cs" />
-    <Compile Include="Factory\CarTags\BrandNew.cs" />
-    <Compile Include="Factory\CarTags\Customized.cs" />
-    <Compile Include="Factory\CarTags\SecondHand.cs" />
+    <Compile Include="Factory\CarTags\StandardFactory.cs" />
+    <Compile Include="Factory\CarTags\CustomizeFactory.cs" />
     <Compile Include="Proxy\IBankAccount.cs" />
     <Compile Include="ICar.cs" />
     <Compile Include="Car Components\IComponent.cs" />
