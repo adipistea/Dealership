@@ -45,7 +45,7 @@ namespace DealershipAuto.GUI.Windows
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
+            Switcher.Switch(new SellCar());
         }
 
         private void car_list_SelectionChanged(object sender, SelectionChangedEventArgs e)

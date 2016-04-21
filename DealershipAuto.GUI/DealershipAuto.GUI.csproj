@@ -65,6 +65,9 @@
     <Compile Include="Pages\BuySecond.xaml.cs">
       <DependentUpon>BuySecond.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SellCar.xaml.cs">
+      <DependentUpon>SellCar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\BuySeries.xaml.cs">
       <DependentUpon>BuySeries.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\BuySecond.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\SellCar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -154,6 +154,7 @@ namespace DealershipAuto.Business
 			car1.Model = ECarModel.Nissan;
 			car1.IsClone = true;
 			car1.Price = 30000;
+            car1.CarTag = ECarTag.SecondHand;
 			car1.Use();
 
 			enhancer.Enhance(car1, ECarType.Basic);
@@ -163,6 +164,7 @@ namespace DealershipAuto.Business
 			car2.Model = ECarModel.Mercedes;
 			car2.IsClone = true;
 			car2.Price = 27000;
+            car2.CarTag = ECarTag.SecondHand;
 			car2.Use();
 
 			enhancer.Enhance(car2, ECarType.Family);
@@ -171,6 +173,7 @@ namespace DealershipAuto.Business
 			Car car3 = new Car(323558);
 			car3.Model = ECarModel.Toyota;
 			car3.IsClone = true;
+            car3.CarTag = ECarTag.SecondHand;
 			car3.Price = 5000;
 			car3.Use();
 
