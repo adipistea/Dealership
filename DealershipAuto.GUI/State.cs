@@ -13,7 +13,7 @@ namespace DealershipAuto.GUI
         private State()
         {
             d = new Dealership();
-            userCarlist = new List<Car>();
+            userCarlist = d.GetSecondHandCars().Cast<Car>().ToList();
         }
         public static State getInstance()
         {

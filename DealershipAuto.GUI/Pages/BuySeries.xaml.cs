@@ -76,6 +76,7 @@ namespace DealershipAuto.GUI.Windows
                     CarEngine.Content = car.Engine.EngineType;
                     CarType.Content = car.CarType;
                     CarAccesory.ItemsSource = car.Accessories;
+                    CarPrice.Content = car.Price;
                 }
             }
             
