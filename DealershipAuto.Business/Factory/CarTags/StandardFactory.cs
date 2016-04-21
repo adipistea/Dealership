@@ -8,6 +8,7 @@ using DealershipAuto.DealershipAuto.Business.CarTags;
 using DealershipAuto.Business.Car_Components;
 using DealershipAuto.Business.Car_Components.Engine_Adapter;
 using DealershipAuto.Business.Car_Prototype;
+using DealershipAuto.Business.Enums;
 
 namespace DealershipAuto.DealershipAuto.Business.Factory.CarTypes
 {
@@ -19,6 +20,7 @@ namespace DealershipAuto.DealershipAuto.Business.Factory.CarTypes
 		{
             Car newCar = (Car) car.Clone();
             newCar.Id = ++_iNumberOfCars;
+			newCar.CarTag = ECarTag.Standard;
             return newCar;
 		}
 	}
