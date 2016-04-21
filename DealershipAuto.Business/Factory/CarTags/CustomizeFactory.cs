@@ -38,6 +38,8 @@ namespace DealershipAuto.DealershipAuto.Business.Factory.CarTypes
 				Electronics = new Electronics(),
 				ExhaustingSystem = new ExhaustingSystem(),
 			};
+            CarEnhancer enh = new CarEnhancer();
+            enh.Enhance(newCar, configurations.CarType);
             return newCar;
 		}
 	}
