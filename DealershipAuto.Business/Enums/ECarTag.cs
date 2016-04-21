@@ -8,7 +8,7 @@ namespace DealershipAuto.Business.Enums
 {
 	public enum ECarTag
 	{
-		BrandNew,
+		Standard,
 		Customized,
 		SecondHand		
 	}

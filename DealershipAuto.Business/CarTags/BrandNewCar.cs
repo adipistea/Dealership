@@ -12,7 +12,7 @@ namespace DealershipAuto.DealershipAuto.Business.CarTags
 	{
 		public BrandNewCar(int id) : base(id)
 		{
-			CarTag = ECarTag.BrandNew;
+			CarTag = ECarTag.Standard;
 		}
 	}
 }
