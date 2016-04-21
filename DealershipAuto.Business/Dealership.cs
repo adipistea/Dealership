@@ -114,11 +114,50 @@ namespace DealershipAuto.Business
 
 		private void InitStandardCars()
 		{
-			CarFactory brandNewFactory = new BrandNew();
-			ICar car1 = brandNewFactory.GetCar();
+
+			ICar car1 = new Car(123958);
 			car1.Model = ECarModel.Nissan;
-			ICar standardCar1 = car1.Clone();
-			_standardCars.Add(standardCar1);
+			car1.IsClone = true;
+			car1.Price = 50000;
+			car1.Electronics.Radio = true;
+			car1.Electronics.Vitezometer = true;
+			car1.Electronics.Turometer = true;
+			
+			_standardCars.Add(car1);
+
+			ICar car2 = new Car(16558);
+			car2.Model = ECarModel.Mercedes;
+			car2.IsClone = true;
+			car2.Price = 270000;
+			car2.Electronics.Radio = true;
+			car2.Electronics.Vitezometer = true;
+			car2.Electronics.GasLevel = true;
+
+			_standardCars.Add(car2);
+
+			ICar car3 = new Car(3558);
+			car3.Model = ECarModel.Mercedes;
+			car3.IsClone = true;
+			car3.Price = 80000;
+			car1.Electronics.Turometer = true;
+			car3.Electronics.Vitezometer = true;
+			car3.Electronics.GasLevel = true;
+
+			_standardCars.Add(car3);
+		}
+
+		public bool AddStandardCar(ICar car)
+		{
+			if (_standardCars.Contains(car))
+			{
+				return false;
+			}
+			else
+			{
+
+				_standardCars.Add(car);
+				return true;
+			}
 		}
 	}
 }
