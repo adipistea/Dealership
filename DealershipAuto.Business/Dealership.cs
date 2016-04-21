@@ -175,7 +175,7 @@ namespace DealershipAuto.Business
 			car3.Use();
 
 			enhancer.Enhance(car3, ECarType.Luxury);
-			_standardCars.Add(car3);
+			_secondHandCars.Add(car3);
 		}
 
 		private void InitEmployees()
