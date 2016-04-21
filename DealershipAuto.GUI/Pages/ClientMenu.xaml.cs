@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DealershipAuto.Business;
 
 namespace DealershipAuto.GUI.Windows
 {
@@ -22,7 +23,9 @@ namespace DealershipAuto.GUI.Windows
     {
         public ClientMenu()
         {
-            InitializeComponent();
+            InitializeComponent();;
+            State s = State.getInstance();
+            car_list.ItemsSource = s.userCarlist;
         }
 
         public void UtilizeState(object state)
@@ -42,8 +45,22 @@ namespace DealershipAuto.GUI.Windows
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            var modal = new CarWindow();
-            modal.Show();
+            
+        }
+
+        private void car_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var item = (sender as ListView).SelectedItem;
+            
+            if (item != null)
+            {
+                Car car = item as Car;
+                if (car != null)
+                {
+                    var modal = new CarWindow(car);
+                    modal.ShowDialog();
+                }
+            }
         }
     }
 }

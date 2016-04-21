@@ -8,7 +8,7 @@
     <Grid Background="White">
         <Label Content="My Cars
                " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="41" Width="164" FontSize="22"/>
-        <ListView HorizontalAlignment="Left" Margin="10,56,0,10" Width="348">
+        <ListView HorizontalAlignment="Left" Margin="10,56,0,10" Width="348" x:Name="car_list" SelectionChanged="car_list_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>

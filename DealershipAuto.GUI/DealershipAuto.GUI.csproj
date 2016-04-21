@@ -65,6 +65,7 @@
     <Compile Include="Pages\BuySeries.xaml.cs">
       <DependentUpon>BuySeries.xaml</DependentUpon>
     </Compile>
+    <Compile Include="State.cs" />
     <Compile Include="Switcher.cs" />
     <Compile Include="Windows\CarWindow.xaml.cs">
       <DependentUpon>CarWindow.xaml</DependentUpon>

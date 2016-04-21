@@ -27,7 +27,7 @@ namespace DealershipAuto.GUI
             InitializeComponent();
             Switcher.pageSwitcher = this;
             Switcher.Switch(new MainMenu());
-            Dealership d = new Dealership();
+
         }
 
         public void Navigate(UserControl nextPage)

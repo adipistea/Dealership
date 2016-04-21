@@ -17,7 +17,7 @@
         <Label Content="Engine: " HorizontalAlignment="Left" Margin="36,113,0,0" VerticalAlignment="Top" FontSize="18" Width="109"/>
         <Label Content="Color: " HorizontalAlignment="Left" Margin="444,113,0,0" VerticalAlignment="Top" FontSize="18" Width="93"/>
         <Label Content="Accesories: " HorizontalAlignment="Left" Margin="36,200,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <ListView Margin="36,0,48,203" Height="122" VerticalAlignment="Bottom">
+        <ListView Margin="36,0,48,203" Height="122" VerticalAlignment="Bottom" x:Name="CarAccesory">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
@@ -27,9 +27,9 @@
         <Label Content="Price: " HorizontalAlignment="Left" Margin="36,159,0,0" VerticalAlignment="Top" FontSize="18" Width="109"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="121,159,0,0" VerticalAlignment="Top" x:Name="CarPrice" Width="99" FontSize="18"/>
         <Button Content="Buy" Margin="0,0,48,135" FontSize="20" Click="Button_Click_2" Height="51" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="115"/>
-        <ComboBox HorizontalAlignment="Left" Margin="121,64,0,0" VerticalAlignment="Top" Width="120" FontSize="18" x:Name="CarModel"/>
-        <ComboBox HorizontalAlignment="Left" Margin="533,64,0,0" VerticalAlignment="Top" Width="120" FontSize="18" x:Name="CarType"/>
-        <ComboBox HorizontalAlignment="Left" Margin="121,113,0,0" VerticalAlignment="Top" Width="120" FontSize="18" x:Name="CarEngine"/>
-        <ComboBox HorizontalAlignment="Left" Margin="533,117,0,0" VerticalAlignment="Top" Width="120" FontSize="18" x:Name="CarColor"/>
+        <ComboBox HorizontalAlignment="Left" Margin="121,64,0,0" VerticalAlignment="Top" Width="120" FontSize="18" x:Name="CarModel" SelectionChanged="CarModel_SelectionChanged"/>
+        <ComboBox HorizontalAlignment="Left" Margin="533,64,0,0" VerticalAlignment="Top" Width="120" FontSize="18" x:Name="CarType" SelectionChanged="CarModel_SelectionChanged"/>
+        <ComboBox HorizontalAlignment="Left" Margin="121,113,0,0" VerticalAlignment="Top" Width="120" FontSize="18" x:Name="CarEngine" SelectionChanged="CarModel_SelectionChanged"/>
+        <ComboBox HorizontalAlignment="Left" Margin="533,117,0,0" VerticalAlignment="Top" Width="120" FontSize="18" x:Name="CarColor" SelectionChanged="CarModel_SelectionChanged"/>
     </Grid>
 </UserControl>

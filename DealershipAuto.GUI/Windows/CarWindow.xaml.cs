@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using DealershipAuto.Business;
 
 namespace DealershipAuto.GUI.Windows
 {
@@ -19,9 +20,19 @@ namespace DealershipAuto.GUI.Windows
     /// </summary>
     public partial class CarWindow : Window
     {
-        public CarWindow()
+        Car _car;
+        public CarWindow(Car car )
         {
+            _car = car;
             InitializeComponent();
+            CarId.Content = car.Id;
+            CarModel.Content = car.Model;
+            CarColor.Content = "Red";
+            CarEngine.Content = car.Engine.EngineType;
+            CarType.Content = car.CarType;
+            CarTag.Content = car.CarTag;
+            CarAccesory.ItemsSource = car.Accessories;
+            
         }
     }
 }
