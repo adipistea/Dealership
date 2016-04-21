@@ -47,6 +47,10 @@
     <Compile Include="Car Components\Base.cs" />
     <Compile Include="Car Components\Breaks.cs" />
     <Compile Include="Car Components\Electronics.cs" />
+    <Compile Include="Car Components\Engine Adapter\DieselEngine.cs" />
+    <Compile Include="Car Components\Engine Adapter\Fuel.cs" />
+    <Compile Include="Car Components\Engine Adapter\GasEngine.cs" />
+    <Compile Include="Car Components\Engine Adapter\PetrolEngine.cs" />
     <Compile Include="Car Components\ExhaustingSystem.cs" />
     <Compile Include="Car Prototype\ICarPrototype.cs" />
     <Compile Include="Car Selling Profit - Strategy\CarProfitCalculator.cs" />

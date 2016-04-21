@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DealershipAuto.Business;
 using DealershipAuto.DealershipAuto.Business.CarTags;
 using DealershipAuto.Business.Car_Components;
+using DealershipAuto.Business.Car_Components.Engine_Adapter;
 
 namespace DealershipAuto.DealershipAuto.Business.Factory.CarTypes
 {
@@ -15,7 +16,7 @@ namespace DealershipAuto.DealershipAuto.Business.Factory.CarTypes
 		{
 			return new BrandNewCar(++_iNumberOfCars)//SHOFT + ALT + F10
 			{
-				Engine = new Engine(),
+                Engine = new DieselEngine(),
 				Base = new Base(),
 				Breaks = new Breaks(),
 				Electronics = new Electronics(),

@@ -1,0 +1,29 @@
+﻿<Window x:Class="DealershipAuto.GUI.Windows.CarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CarWindow" Height="300" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Car: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="49,10,0,0" VerticalAlignment="Top" x:Name="CarId"/>
+        <Label Content="State: " HorizontalAlignment="Left" Margin="162,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="CarTag" HorizontalAlignment="Left" Margin="201,10,0,0" VerticalAlignment="Top" x:Name="CarTag"/>
+        <Label Content="Brand: " HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="MODEL" HorizontalAlignment="Left" Margin="55,46,0,0" VerticalAlignment="Top" x:Name="CarModel"/>
+        <Label Content="Type: " HorizontalAlignment="Left" Margin="162,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="CarType" HorizontalAlignment="Left" Margin="201,46,0,0" VerticalAlignment="Top" x:Name="CarType"/>
+        <Label Content="Engine: " HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Engine" HorizontalAlignment="Left" Margin="67,84,0,0" VerticalAlignment="Top" x:Name="CarEngine" Width="66"/>
+        <Label Content="Accesories: " HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top"/>
+        <ListView Height="100" Margin="10,154,10,0" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Color: " HorizontalAlignment="Left" Margin="162,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Color" HorizontalAlignment="Left" Margin="201,84,0,0" VerticalAlignment="Top" x:Name="CarColor"/>
+
+    </Grid>
+</Window>

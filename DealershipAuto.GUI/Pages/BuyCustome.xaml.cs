@@ -18,9 +18,9 @@ namespace DealershipAuto.GUI.Windows
     /// <summary>
     /// Interaction logic for ClientMenu.xaml
     /// </summary>
-    public partial class ClientMenu : UserControl, ISwitchable
+    public partial class BuyCustome : UserControl, ISwitchable
     {
-        public ClientMenu()
+        public BuyCustome()
         {
             InitializeComponent();
         }
@@ -32,7 +32,18 @@ namespace DealershipAuto.GUI.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new MainMenu());
+            Switcher.Switch(new ClientMenu());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new BuyCarMenu());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

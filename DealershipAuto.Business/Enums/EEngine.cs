@@ -8,7 +8,7 @@ namespace DealershipAuto.Business.Enums
 {
 	public enum EEngine
 	{
-
+        Diesel, Petrol, Gas
 
 	}
 }

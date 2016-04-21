@@ -53,14 +53,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\BuyCarMenu.xaml.cs">
+      <DependentUpon>BuyCarMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BuyCustome.xaml.cs">
+      <DependentUpon>BuyCustome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BuySeries.xaml.cs">
+      <DependentUpon>BuySeries.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Switcher.cs" />
-    <Compile Include="Windows\ClientMenu.xaml.cs">
+    <Compile Include="Windows\CarWindow.xaml.cs">
+      <DependentUpon>CarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClientMenu.xaml.cs">
       <DependentUpon>ClientMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\EmployeeMenu.xaml.cs">
+    <Compile Include="Pages\EmployeeMenu.xaml.cs">
       <DependentUpon>EmployeeMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\MainMenu.xaml.cs">
+    <Compile Include="Pages\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
     <Page Include="PageSwitcher.xaml">
@@ -76,15 +88,31 @@
       <DependentUpon>PageSwitcher.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\ClientMenu.xaml">
+    <Page Include="Pages\BuyCarMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BuyCustome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BuySeries.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\CarWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\EmployeeMenu.xaml">
+    <Page Include="Pages\ClientMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\MainMenu.xaml">
+    <Page Include="Pages\EmployeeMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

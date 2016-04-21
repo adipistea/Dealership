@@ -73,5 +73,12 @@ namespace DealershipAuto.Business
 			obj.IsClone = true;
 			return obj;
 		}
-	}
+
+
+
+        public ECarType Type()
+        {
+            return CarType;
+        }
+    }
 }
