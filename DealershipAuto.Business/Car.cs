@@ -34,6 +34,11 @@ namespace DealershipAuto.Business
 		{
 			this.Id = Id;
 			Accessories = new List<string>();
+			Engine = new Engine();
+			Base = new Base();
+			Breaks = new Breaks();
+			Electronics = new Electronics();
+			ExhaustingSystem = new ExhaustingSystem();
 		}
 
 		public void SetAccessory(string strAccessory)
@@ -57,7 +62,7 @@ namespace DealershipAuto.Business
 			sb.Append("Price: " + Price + "\n");
 
 			sb.Append("Accessories List: ");
-			foreach(string accessory in Accessories)
+			foreach (string accessory in Accessories)
 			{
 				sb.Append(accessory + "\n");
 			}
@@ -76,10 +81,10 @@ namespace DealershipAuto.Business
 
 
 
-        public ECarType Type()
-        {
-            return CarType;
-        }
+		public ECarType Type()
+		{
+			return CarType;
+		}
 
 
 		public void Use()
@@ -97,7 +102,7 @@ namespace DealershipAuto.Business
 
 			Breaks.BrakeDistance = rand.Next(0, 60);
 			Breaks.CableNotBroke = GetRandomBool();
-			Breaks.Overheat = rand.Next(50, 150);			
+			Breaks.Overheat = rand.Next(50, 150);
 		}
 
 		private bool GetRandomBool()
@@ -105,5 +110,23 @@ namespace DealershipAuto.Business
 			Random rand = new Random();
 			return rand.Next(0, 2) == 0 ? false : true;
 		}
-    }
+
+		public override bool Equals(object obj)
+		{
+			ICar car = obj as Car;
+			if (car == null)
+			{
+				return true;
+			}
+			else
+			{
+				if (this.Id == car.Id)
+				{
+					return true;
+				}
+
+				return false;
+			}
+		}
+	}
 }
