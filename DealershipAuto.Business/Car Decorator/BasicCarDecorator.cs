@@ -18,7 +18,12 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
 
         public override void Assemble()
         {
-            _decoratedCar.SetAccessory("basic");
+            _decoratedCar.SetAccessory("Heating System");
+            _decoratedCar.SetAccessory("Assisted Direction");
+            _decoratedCar.SetAccessory("ABS");
+            _decoratedCar.SetAccessory("Airbags");
+            _decoratedCar.SetAccessory("Simple Seat Belts");
+            _decoratedCar.SetAccessory("Assistance");
             _decoratedCar.CarType = ECarType.Basic;
         }
     }

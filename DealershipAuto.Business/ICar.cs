@@ -26,6 +26,8 @@ namespace DealershipAuto.Business
 
 		string ShortSummary();
 
+        ECarType Type();
+
 		string LongSummary();
 
 		bool IsClone { get; set; }

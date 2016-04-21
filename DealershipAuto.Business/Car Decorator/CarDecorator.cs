@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DealershipAuto.Business;
+using DealershipAuto.Business.Enums;
 
 namespace DealershipAuto.DealershipAuto.Business.Decorator
 {
@@ -21,6 +22,11 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
         public void SetAccessory(string accessory)
         {
             _decoratedCar.SetAccessory(accessory);
+        }
+
+        public ECarType Type()
+        {
+            return _decoratedCar.Type();
         }
     }
 }

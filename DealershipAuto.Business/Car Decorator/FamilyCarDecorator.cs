@@ -14,7 +14,9 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
 		public override void Assemble()
 		{
 			base.Assemble();
-			_decoratedCar.SetAccessory("family");
+			_decoratedCar.SetAccessory("Electric Windows");
+            _decoratedCar.SetAccessory("Remote Closing");
+            _decoratedCar.SetAccessory("Lightning Luggage Carrier");
 			_decoratedCar.CarType = ECarType.Family;
 		}
 	}
