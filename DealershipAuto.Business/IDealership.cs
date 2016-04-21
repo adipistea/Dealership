@@ -13,6 +13,7 @@ namespace DealershipAuto.Business
 
 		TestingResult SellSecondHandCar(ICar car, double sellingCost);
 
+		bool AddStandardCar(ICar car);
 		
 		void BuyCar(ICar car);
 

@@ -5,7 +5,6 @@ using DealershipAuto.Business.Enums;
 using DealershipAuto.Business.Proxy;
 using DealershipAuto.DealershipAuto.Business.Decorator;
 using DealershipAuto.DealershipAuto.Business.Factory;
-using DealershipAuto.DealershipAuto.Business.Factory.CarTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -136,7 +135,7 @@ namespace DealershipAuto.Business
 			_standardCars.Add(car2);
 
 			ICar car3 = new Car(3558);
-			car3.Model = ECarModel.Mercedes;
+			car3.Model = ECarModel.Toyota;
 			car3.IsClone = true;
 			car3.Price = 80000;
 			car1.Electronics.Turometer = true;

@@ -1,6 +1,7 @@
 ﻿using DealershipAuto.Business.Car_Components;
 using DealershipAuto.Business.Car_Prototype;
 using DealershipAuto.Business.Enums;
+using System.Collections.Generic;
 
 namespace DealershipAuto.Business
 {
@@ -21,6 +22,8 @@ namespace DealershipAuto.Business
 		Electronics Electronics { get; set; }
 		ExhaustingSystem ExhaustingSystem { get; set; }
 		Engine Engine { get; set; }
+
+		List<string> Accessories { get; set; }
 
 		void SetAccessory(string strAccessory);
 

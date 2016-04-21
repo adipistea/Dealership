@@ -1,6 +1,5 @@
 ﻿using DealershipAuto.Business;
 using DealershipAuto.Business.CarService___Singleton___State;
-using DealershipAuto.DealershipAuto.Business.Factory.CarTypes;
 using DealershipAuto.Business.Enums;
 using System;
 using System.Threading;
@@ -45,6 +44,7 @@ namespace DealershipAuto.ConsoleUI
 
 			//car testing
 			ICar secondHandCar = GetEligibleSecondHandCar(price);
+			secondHandCar.Use();
 			var result = _dealership.SellSecondHandCar(secondHandCar, price);
 
 			ClearDisplay();
@@ -79,30 +79,15 @@ namespace DealershipAuto.ConsoleUI
 
 		private ICar GetEligibleSecondHandCar(int price)
 		{
-			SecondHand secondHand = new SecondHand();
-			Car car = secondHand.GetCar();
-			car.Model = ECarModel.Mercedes;
-			//car.Price = price;
-			CarEnhancer enhancer = new CarEnhancer();
-			return enhancer.Enhance(car, ECarType.Family);
+			//SecondHand secondHand = new SecondHand();
+			//Car car = secondHand.GetCar();
+			//car.Model = ECarModel.Mercedes;
+			////car.Price = price;
+			//CarEnhancer enhancer = new CarEnhancer();
+			//return enhancer.Enhance(car, ECarType.Family);
+			return null;
 		}
 
-		private ICar GetNotEligibleSecondHandCar(int price)
-		{
-			SecondHand secondHand = new SecondHand();
-			ICar car = secondHand.GetCar();
-			car.Model = ECarModel.Mercedes;
-			
-			car.Base.Damage = 345;
-
-			car.Breaks.BrakeDistance = 567;
-			car.Breaks.CableNotBroke = false;
-
-			car.Electronics.GasLevel = false;
-			car.Electronics.Turometer = false;
-
-			car.Engine.Overheat = 63463;
-			return car;
-		}
+		
 	}
 }
