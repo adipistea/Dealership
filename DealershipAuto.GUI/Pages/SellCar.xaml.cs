@@ -52,7 +52,11 @@ namespace DealershipAuto.GUI.Windows
             State s = State.getInstance();
             var r = s.d.SellSecondHandCar(_curentCar, Convert.ToDouble(CarPrice.Text));
             if(r.Passed)
+            {
                 Switcher.Switch(new ClientMenu());
+                s.userCarlist.Remove(_curentCar);
+            }
+
             else
             {
                 MessageBox.Show(r.ResultOfInvestigation);
