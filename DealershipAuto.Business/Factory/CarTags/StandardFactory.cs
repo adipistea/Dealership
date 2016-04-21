@@ -14,7 +14,7 @@ namespace DealershipAuto.DealershipAuto.Business.Factory.CarTypes
 {
 	public class StandardFactory : CarFactory
 	{
-        ICar car {get; set;}
+		public ICar car {get; set;}
 
 		public override Car GetCar()
 		{
