@@ -128,5 +128,14 @@ namespace DealershipAuto.Business
 				return false;
 			}
 		}
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Model: " + Model + "\n");
+            sb.Append("Type: " + CarType + "\n");
+            sb.Append("Engine: " + Engine.EngineType + "\n");
+            return sb.ToString();
+        }
 	}
 }
