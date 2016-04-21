@@ -17,7 +17,7 @@ namespace DealershipAuto.Business.Car_Components.Engine_Adapter
                     Volume = f.Volume,
                     EngineType = Enums.EEngine.Petrol
                 };
-                ConsumeGas(adaptingFuel);
+                ConsumePetrol(adaptingFuel);
                 f.Volume = adaptingFuel.Volume;
             }
             else
