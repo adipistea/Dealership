@@ -25,6 +25,7 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
             _decoratedCar.SetAccessory("Simple Seat Belts");
             _decoratedCar.SetAccessory("Assistance");
             _decoratedCar.CarType = ECarType.Basic;
+            _decoratedCar.Price = 5000;
         }
 
         public new ECarType Type()

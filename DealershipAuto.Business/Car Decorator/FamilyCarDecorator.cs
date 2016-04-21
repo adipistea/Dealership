@@ -18,6 +18,7 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
             _decoratedCar.SetAccessory("Remote Closing");
             _decoratedCar.SetAccessory("Lightning Luggage Carrier");
 			_decoratedCar.CarType = ECarType.Family;
+            _decoratedCar.Price += 1500;
 		}
 
         public new ECarType Type()
