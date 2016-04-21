@@ -114,7 +114,7 @@ namespace DealershipAuto.Business
 
 		private void InitStandardCars()
 		{
-			CarFactory brandNewFactory = new BrandNew();
+			CarFactory brandNewFactory = new StandardFactory();
 			ICar car1 = brandNewFactory.GetCar();
 			car1.Model = ECarModel.Nissan;
 			ICar standardCar1 = car1.Clone();

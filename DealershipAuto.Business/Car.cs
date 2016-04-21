@@ -11,7 +11,7 @@ namespace DealershipAuto.Business
 {
 	public class Car : ICar, ICarPrototype
 	{
-		public int Id { get; private set; }
+		public int Id { get; set; }
 		public ECarTag CarTag { get; set; }
 		public ECarType CarType { get; set; }
 		public double Price { get; set; }
