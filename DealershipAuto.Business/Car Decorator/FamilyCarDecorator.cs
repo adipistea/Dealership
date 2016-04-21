@@ -19,5 +19,10 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
             _decoratedCar.SetAccessory("Lightning Luggage Carrier");
 			_decoratedCar.CarType = ECarType.Family;
 		}
+
+        public new ECarType Type()
+        {
+            return ECarType.Family;
+        }
 	}
 }

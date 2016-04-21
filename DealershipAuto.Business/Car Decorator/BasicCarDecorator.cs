@@ -26,5 +26,10 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
             _decoratedCar.SetAccessory("Assistance");
             _decoratedCar.CarType = ECarType.Basic;
         }
+
+        public new ECarType Type()
+        {
+            return ECarType.Basic;
+        }
     }
 }

@@ -20,5 +20,10 @@ namespace DealershipAuto.DealershipAuto.Business.Decorator
             _decoratedCar.SetAccessory("Board Computer");
 			_decoratedCar.CarType = ECarType.Luxury;
 		}
+
+        public new ECarType Type()
+        {
+            return ECarType.Luxury;
+        }
 	}
 }
