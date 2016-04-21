@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DealershipAuto.Business;
 
 namespace DealershipAuto.GUI
 {
@@ -26,6 +27,7 @@ namespace DealershipAuto.GUI
             InitializeComponent();
             Switcher.pageSwitcher = this;
             Switcher.Switch(new MainMenu());
+            Dealership d = new Dealership();
         }
 
         public void Navigate(UserControl nextPage)
